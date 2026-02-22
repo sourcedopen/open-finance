@@ -1,0 +1,131 @@
+{
+    "app": {
+        "name": "Open Finance",
+        "tagline": "Open Source & Free Forever",
+        "heroTitle1": "Smart",
+        "heroTitle2": "Financial Tools",
+        "heroTitle3": "for Everyone",
+        "heroDescription": "Open Finance gives you free, open-source calculators and comparison tools to make confident money decisions — no sign-ups, no ads, no nonsense.",
+        "ctaCompare": "Compare Balance Transfer",
+        "ctaGithub": "View on GitHub",
+        "copyright": "© {year} Open Finance — Open-source financial tools"
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "balanceTransfer": "Balance Transfer",
+        "emiCalculator": "EMI Calculator",
+        "fdCalculator": "FD Calculator"
+    },
+    "stats": {
+        "toolsAvailable": "Tools Available",
+        "openSource": "Open Source",
+        "cost": "Cost",
+        "free": "Free"
+    },
+    "tools": {
+        "heading": "Financial Tools",
+        "subheading": "Pick a tool to get started — more coming soon.",
+        "openTool": "Open Tool",
+        "live": "Live",
+        "comingSoon": "Coming Soon",
+        "balanceTransfer": {
+            "title": "Balance Transfer Compare",
+            "description": "Compare your current loan with a new bank's offer. See EMI differences, total interest savings, and whether a balance transfer is worth it after exit and processing charges."
+        },
+        "emiCalculator": {
+            "title": "EMI Calculator",
+            "description": "Calculate your monthly EMI for any loan amount, interest rate and tenure. View detailed month-by-month amortization schedules."
+        },
+        "fdCalculator": {
+            "title": "FD Interest Calculator",
+            "description": "Calculate your Fixed Deposit maturity amount and interest earned. Supports multiple compounding frequencies with a year-by-year growth breakdown."
+        },
+        "loanEligibility": {
+            "title": "Loan Eligibility",
+            "description": "Check how much loan you are eligible for based on your income, existing obligations, and desired tenure."
+        }
+    },
+    "common": {
+        "print": "Print",
+        "showSchedule": "Show Schedule",
+        "hideSchedule": "Hide Schedule",
+        "showBreakdown": "Show Breakdown",
+        "hideBreakdown": "Hide Breakdown",
+        "yearly": "Yearly",
+        "monthly": "Monthly",
+        "year": "Year",
+        "month": "Month",
+        "emi": "EMI",
+        "totalEmi": "Total EMI",
+        "principal": "Principal",
+        "interest": "Interest",
+        "balance": "Balance",
+        "closingBalance": "Closing Balance",
+        "openingBalance": "Opening Balance",
+        "interestEarned": "Interest Earned"
+    },
+    "balanceTransfer": {
+        "pageTitle": "Balance Transfer Compare",
+        "pageDescription": "Compare your current loan with a new offer to see if a balance transfer saves you money.",
+        "loanDetails": "Loan Details",
+        "outstandingAmount": "Outstanding Loan Amount (₹)",
+        "currentBank": "Current Bank",
+        "newBank": "New Bank",
+        "roi": "Rate of Interest (% p.a.)",
+        "tenure": "Remaining Tenure (months)",
+        "newTenure": "Tenure (months)",
+        "exitCharge": "Exit / Foreclosure Charge (₹)",
+        "processingCharge": "Processing Charge (₹)",
+        "beneficial": "Balance transfer is beneficial! You save",
+        "notBeneficial": "Balance transfer is NOT beneficial. You pay extra",
+        "currentSummary": "Current Bank Summary",
+        "newSummary": "New Bank Summary",
+        "monthlyEmi": "Monthly EMI",
+        "totalInterest": "Total Interest",
+        "totalPayment": "Total Payment",
+        "totalCost": "Total Cost",
+        "costBreakdown": "Cost Breakdown Comparison",
+        "particulars": "Particulars",
+        "difference": "Difference",
+        "totalInterestPayable": "Total Interest Payable",
+        "totalLoanPayment": "Total Loan Payment",
+        "netTotalCost": "Net Total Cost",
+        "currentSchedule": "Current Bank Schedule",
+        "newSchedule": "New Bank Schedule"
+    },
+    "emiCalc": {
+        "pageTitle": "EMI Calculator",
+        "pageDescription": "Calculate your monthly EMI and view a detailed amortization schedule.",
+        "loanDetails": "Loan Details",
+        "loanAmount": "Loan Amount (₹)",
+        "roi": "Rate of Interest (% p.a.)",
+        "tenure": "Tenure (months)",
+        "results": "Results",
+        "monthlyEmi": "Monthly EMI",
+        "principalAmount": "Principal Amount",
+        "totalInterest": "Total Interest",
+        "totalPayment": "Total Payment",
+        "emptyState": "Enter loan details to see your EMI",
+        "amortizationSchedule": "Amortization Schedule"
+    },
+    "fdCalc": {
+        "pageTitle": "FD Interest Calculator",
+        "pageDescription": "Calculate your Fixed Deposit maturity amount and interest earned.",
+        "depositDetails": "Deposit Details",
+        "depositAmount": "Deposit Amount (₹)",
+        "roi": "Rate of Interest (% p.a.)",
+        "tenure": "Tenure (months)",
+        "compounding": "Compounding Frequency",
+        "compMonthly": "Monthly",
+        "compQuarterly": "Quarterly",
+        "compHalfYearly": "Half-Yearly",
+        "compYearly": "Yearly",
+        "returns": "Returns",
+        "maturityAmount": "Maturity Amount",
+        "investedAmount": "Invested Amount",
+        "totalInterestEarned": "Total Interest Earned",
+        "effectiveYield": "Effective Annual Yield",
+        "emptyState": "Enter deposit details to see returns",
+        "yearlyGrowth": "Year-by-Year Growth"
+    }
+}

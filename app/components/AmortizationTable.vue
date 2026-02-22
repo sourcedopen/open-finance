@@ -62,6 +62,8 @@ function formatCurrency(value: number): string {
   }).format(value)
 }
 
+const { t } = useI18n()
+
 const btnClass = computed(() => `btn btn-sm btn-outline btn-${color}`)
 const titleClass = computed(() => `card-title text-${color} text-lg`)
 </script>
@@ -84,7 +86,7 @@ const titleClass = computed(() => `card-title text-${color} text-lg`)
               ]"
               @click="viewMode = 'yearly'"
             >
-              Yearly
+              {{ $t('common.yearly') }}
             </button>
             <button
               :class="[
@@ -93,14 +95,14 @@ const titleClass = computed(() => `card-title text-${color} text-lg`)
               ]"
               @click="viewMode = 'monthly'"
             >
-              Monthly
+              {{ $t('common.monthly') }}
             </button>
           </div>
           <button
             :class="btnClass"
             @click="showSchedule = !showSchedule"
           >
-            {{ showSchedule ? 'Hide' : 'Show' }} Schedule
+            {{ showSchedule ? $t('common.hideSchedule') : $t('common.showSchedule') }}
           </button>
         </div>
       </div>
@@ -113,11 +115,11 @@ const titleClass = computed(() => `card-title text-${color} text-lg`)
         <table v-if="viewMode === 'yearly'" class="table table-xs table-zebra table-pin-rows">
           <thead>
             <tr>
-              <th>Year</th>
-              <th class="text-right">Total EMI</th>
-              <th class="text-right">Principal</th>
-              <th class="text-right">Interest</th>
-              <th class="text-right">Closing Balance</th>
+              <th>{{ $t('common.year') }}</th>
+              <th class="text-right">{{ $t('common.totalEmi') }}</th>
+              <th class="text-right">{{ $t('common.principal') }}</th>
+              <th class="text-right">{{ $t('common.interest') }}</th>
+              <th class="text-right">{{ $t('common.closingBalance') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -135,11 +137,11 @@ const titleClass = computed(() => `card-title text-${color} text-lg`)
         <table v-else class="table table-xs table-zebra table-pin-rows">
           <thead>
             <tr>
-              <th>Month</th>
-              <th class="text-right">EMI</th>
-              <th class="text-right">Principal</th>
-              <th class="text-right">Interest</th>
-              <th class="text-right">Balance</th>
+              <th>{{ $t('common.month') }}</th>
+              <th class="text-right">{{ $t('common.emi') }}</th>
+              <th class="text-right">{{ $t('common.principal') }}</th>
+              <th class="text-right">{{ $t('common.interest') }}</th>
+              <th class="text-right">{{ $t('common.balance') }}</th>
             </tr>
           </thead>
           <tbody>

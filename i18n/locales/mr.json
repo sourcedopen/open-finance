@@ -1,0 +1,131 @@
+{
+    "app": {
+        "name": "ओपन फायनान्स",
+        "tagline": "ओपन सोर्स आणि कायम मोफत",
+        "heroTitle1": "स्मार्ट",
+        "heroTitle2": "आर्थिक साधने",
+        "heroTitle3": "सर्वांसाठी",
+        "heroDescription": "ओपन फायनान्स तुम्हाला मोफत, ओपन-सोर्स कॅल्क्युलेटर आणि तुलना साधने देते जेणेकरून तुम्ही आत्मविश्वासाने आर्थिक निर्णय घेऊ शकता — नोंदणी नाही, जाहिराती नाही.",
+        "ctaCompare": "बॅलन्स ट्रान्सफर तुलना करा",
+        "ctaGithub": "GitHub वर पहा",
+        "copyright": "© {year} ओपन फायनान्स — ओपन-सोर्स आर्थिक साधने"
+    },
+    "nav": {
+        "dashboard": "डॅशबोर्ड",
+        "balanceTransfer": "बॅलन्स ट्रान्सफर",
+        "emiCalculator": "EMI कॅल्क्युलेटर",
+        "fdCalculator": "FD कॅल्क्युलेटर"
+    },
+    "stats": {
+        "toolsAvailable": "उपलब्ध साधने",
+        "openSource": "ओपन सोर्स",
+        "cost": "किंमत",
+        "free": "मोफत"
+    },
+    "tools": {
+        "heading": "आर्थिक साधने",
+        "subheading": "सुरू करण्यासाठी एक साधन निवडा — आणखी लवकरच येत आहेत.",
+        "openTool": "साधन उघडा",
+        "live": "सक्रिय",
+        "comingSoon": "लवकरच येत आहे",
+        "balanceTransfer": {
+            "title": "बॅलन्स ट्रान्सफर तुलना",
+            "description": "तुमच्या सध्याच्या कर्जाची नवीन बँकेच्या ऑफरशी तुलना करा. EMI फरक, एकूण व्याज बचत आणि एक्झिट आणि प्रोसेसिंग शुल्कानंतर बॅलन्स ट्रान्सफर फायदेशीर आहे का ते पहा."
+        },
+        "emiCalculator": {
+            "title": "EMI कॅल्क्युलेटर",
+            "description": "कोणत्याही कर्जाची रक्कम, व्याजदर आणि कालावधीसाठी तुमचा मासिक EMI मोजा. तपशीलवार महिना-दर-महिना अमोर्टायझेशन शेड्यूल पहा."
+        },
+        "fdCalculator": {
+            "title": "FD व्याज कॅल्क्युलेटर",
+            "description": "तुमच्या मुदत ठेवीची परिपक्वता रक्कम आणि मिळणारे व्याज मोजा. अनेक कंपाउंडिंग फ्रिक्वेन्सी सपोर्ट आणि वर्षानुसार वाढ तपशील."
+        },
+        "loanEligibility": {
+            "title": "कर्ज पात्रता",
+            "description": "तुमचे उत्पन्न, विद्यमान दायित्वे आणि इच्छित कालावधीवर आधारित तुम्ही किती कर्जासाठी पात्र आहात ते तपासा."
+        }
+    },
+    "common": {
+        "print": "प्रिंट",
+        "showSchedule": "शेड्यूल दाखवा",
+        "hideSchedule": "शेड्यूल लपवा",
+        "showBreakdown": "तपशील दाखवा",
+        "hideBreakdown": "तपशील लपवा",
+        "yearly": "वार्षिक",
+        "monthly": "मासिक",
+        "year": "वर्ष",
+        "month": "महिना",
+        "emi": "EMI",
+        "totalEmi": "एकूण EMI",
+        "principal": "मुद्दल",
+        "interest": "व्याज",
+        "balance": "शिल्लक",
+        "closingBalance": "अंतिम शिल्लक",
+        "openingBalance": "सुरुवातीची शिल्लक",
+        "interestEarned": "मिळालेले व्याज"
+    },
+    "balanceTransfer": {
+        "pageTitle": "बॅलन्स ट्रान्सफर तुलना",
+        "pageDescription": "तुमच्या सध्याच्या कर्जाची नवीन ऑफरशी तुलना करा आणि बॅलन्स ट्रान्सफरमुळे पैसे वाचतात का ते पहा.",
+        "loanDetails": "कर्ज तपशील",
+        "outstandingAmount": "थकित कर्ज रक्कम (₹)",
+        "currentBank": "सध्याची बँक",
+        "newBank": "नवीन बँक",
+        "roi": "व्याजदर (% वार्षिक)",
+        "tenure": "उर्वरित कालावधी (महिने)",
+        "newTenure": "कालावधी (महिने)",
+        "exitCharge": "एक्झिट / फोरक्लोजर शुल्क (₹)",
+        "processingCharge": "प्रोसेसिंग शुल्क (₹)",
+        "beneficial": "बॅलन्स ट्रान्सफर फायदेशीर आहे! तुमची बचत",
+        "notBeneficial": "बॅलन्स ट्रान्सफर फायदेशीर नाही. तुम्हाला अतिरिक्त खर्च",
+        "currentSummary": "सध्याच्या बँकेचा सारांश",
+        "newSummary": "नवीन बँकेचा सारांश",
+        "monthlyEmi": "मासिक EMI",
+        "totalInterest": "एकूण व्याज",
+        "totalPayment": "एकूण भरणा",
+        "totalCost": "एकूण खर्च",
+        "costBreakdown": "खर्च तपशील तुलना",
+        "particulars": "तपशील",
+        "difference": "फरक",
+        "totalInterestPayable": "एकूण देय व्याज",
+        "totalLoanPayment": "एकूण कर्ज भरणा",
+        "netTotalCost": "निव्वळ एकूण खर्च",
+        "currentSchedule": "सध्याच्या बँकेचे शेड्यूल",
+        "newSchedule": "नवीन बँकेचे शेड्यूल"
+    },
+    "emiCalc": {
+        "pageTitle": "EMI कॅल्क्युलेटर",
+        "pageDescription": "तुमचा मासिक EMI मोजा आणि तपशीलवार अमोर्टायझेशन शेड्यूल पहा.",
+        "loanDetails": "कर्ज तपशील",
+        "loanAmount": "कर्जाची रक्कम (₹)",
+        "roi": "व्याजदर (% वार्षिक)",
+        "tenure": "कालावधी (महिने)",
+        "results": "निकाल",
+        "monthlyEmi": "मासिक EMI",
+        "principalAmount": "मुद्दल रक्कम",
+        "totalInterest": "एकूण व्याज",
+        "totalPayment": "एकूण भरणा",
+        "emptyState": "तुमचा EMI पाहण्यासाठी कर्जाचे तपशील प्रविष्ट करा",
+        "amortizationSchedule": "अमोर्टायझेशन शेड्यूल"
+    },
+    "fdCalc": {
+        "pageTitle": "FD व्याज कॅल्क्युलेटर",
+        "pageDescription": "तुमच्या मुदत ठेवीची परिपक्वता रक्कम आणि मिळणारे व्याज मोजा.",
+        "depositDetails": "ठेव तपशील",
+        "depositAmount": "ठेव रक्कम (₹)",
+        "roi": "व्याजदर (% वार्षिक)",
+        "tenure": "कालावधी (महिने)",
+        "compounding": "कंपाउंडिंग फ्रिक्वेन्सी",
+        "compMonthly": "मासिक",
+        "compQuarterly": "तिमाही",
+        "compHalfYearly": "सहामाही",
+        "compYearly": "वार्षिक",
+        "returns": "परतावा",
+        "maturityAmount": "परिपक्वता रक्कम",
+        "investedAmount": "गुंतवलेली रक्कम",
+        "totalInterestEarned": "एकूण मिळालेले व्याज",
+        "effectiveYield": "प्रभावी वार्षिक परतावा",
+        "emptyState": "परतावा पाहण्यासाठी ठेव तपशील प्रविष्ट करा",
+        "yearlyGrowth": "वर्षानुसार वाढ"
+    }
+}

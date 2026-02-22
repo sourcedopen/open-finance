@@ -1,13 +1,8 @@
 <script setup lang="ts">
+const { t } = useI18n()
 useHead({
-  title: 'FD Interest Calculator | Open Finance',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Calculate your Fixed Deposit maturity amount and interest earned. Supports monthly, quarterly, half-yearly, and yearly compounding with year-by-year growth breakdown.',
-    },
-  ],
+  title: computed(() => `${t('fdCalc.pageTitle')} | ${t('app.name')}`),
+  meta: [{ name: 'description', content: () => t('fdCalc.pageDescription') }],
 })
 </script>
 
