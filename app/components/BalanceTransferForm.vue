@@ -2,13 +2,13 @@
 const { compareBalanceTransfer } = useEmiCalculator()
 
 // Form state
-const loanAmount = ref<number>(1000000)
+const loanAmount = ref<number>(1500000)
 const currentRoi = ref<number>(10.5)
-const currentTenure = ref<number>(120)
-const newRoi = ref<number>(8.5)
-const newTenure = ref<number>(120)
+const currentTenure = ref<number>(360)
+const newRoi = ref<number>(8.0)
+const newTenure = ref<number>(240)
 const exitCharge = ref<number>(5000)
-const processingCharge = ref<number>(10000)
+const processingCharge = ref<number>(20000)
 
 // Computed comparison result
 const result = computed(() => {
