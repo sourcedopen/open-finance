@@ -1,2 +1,53 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* ── Print Styles ── */
+@media print {
+
+    /* Hide non-essential UI */
+    header,
+    footer,
+    .no-print,
+    .btn-outline {
+        display: none !important;
+    }
+
+    /* Remove scroll containers so full tables print */
+    .max-h-96,
+    .max-h-\[28rem\] {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .overflow-y-auto,
+    .overflow-x-auto {
+        overflow: visible !important;
+    }
+
+    /* Remove shadows and borders for clean output */
+    .shadow-xl,
+    .shadow-2xl,
+    .shadow-lg {
+        box-shadow: none !important;
+    }
+
+    .card {
+        border: 1px solid #ddd !important;
+        break-inside: avoid;
+    }
+
+    /* Ensure tables don't break across pages */
+    table {
+        break-inside: auto;
+    }
+
+    tr {
+        break-inside: avoid;
+    }
+
+    /* Ensure page uses full width */
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

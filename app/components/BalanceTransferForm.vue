@@ -32,6 +32,10 @@ function formatCurrency(value: number): string {
     maximumFractionDigits: 0,
   }).format(value)
 }
+
+function printPage() {
+  window.print()
+}
 </script>
 
 <template>
@@ -44,6 +48,15 @@ function formatCurrency(value: number): string {
       <p class="text-base-content/60 mt-2 text-lg">
         Compare your current loan with a new offer to see if a balance transfer saves you money.
       </p>
+      <button
+        class="btn btn-sm btn-ghost gap-2 mt-4 no-print"
+        @click="printPage"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+        </svg>
+        Print
+      </button>
     </div>
 
     <!-- Input Section -->
