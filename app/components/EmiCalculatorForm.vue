@@ -11,9 +11,6 @@ const result = computed(() => {
   return calculateEmi(loanAmount.value, roi.value, tenure.value)
 })
 
-// Toggle amortization schedule
-const showSchedule = ref(false)
-
 // Format currency
 function formatCurrency(value: number): string {
   return new Intl.NumberFormat('en-IN', {
@@ -170,43 +167,11 @@ function formatCurrency(value: number): string {
     </div>
 
     <!-- Amortization Schedule -->
-    <div v-if="result.emi > 0" class="card bg-base-200 shadow-xl">
-      <div class="card-body">
-        <div class="flex items-center justify-between">
-          <h3 class="card-title text-secondary text-lg">Amortization Schedule</h3>
-          <button
-            class="btn btn-sm btn-outline btn-secondary"
-            @click="showSchedule = !showSchedule"
-          >
-            {{ showSchedule ? 'Hide' : 'Show' }} Schedule
-          </button>
-        </div>
-        <div
-          v-if="showSchedule"
-          class="overflow-x-auto mt-4 max-h-[28rem] overflow-y-auto"
-        >
-          <table class="table table-xs table-zebra table-pin-rows">
-            <thead>
-              <tr>
-                <th>Month</th>
-                <th class="text-right">EMI</th>
-                <th class="text-right">Principal</th>
-                <th class="text-right">Interest</th>
-                <th class="text-right">Balance</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="row in result.monthlyBreakdown" :key="row.month">
-                <td>{{ row.month }}</td>
-                <td class="text-right">{{ formatCurrency(row.emi) }}</td>
-                <td class="text-right">{{ formatCurrency(row.principal) }}</td>
-                <td class="text-right">{{ formatCurrency(row.interest) }}</td>
-                <td class="text-right">{{ formatCurrency(row.balance) }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+    <AmortizationTable
+      v-if="result.emi > 0"
+      :breakdown="result.monthlyBreakdown"
+      color="secondary"
+      title="Amortization Schedule"
+    />
   </div>
 </template>

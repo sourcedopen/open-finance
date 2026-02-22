@@ -23,9 +23,6 @@ const result = computed(() => {
   )
 })
 
-// Show amortization
-const showCurrentSchedule = ref(false)
-const showNewSchedule = ref(false)
 
 // Format currency
 function formatCurrency(value: number): string {
@@ -373,85 +370,16 @@ function formatCurrency(value: number): string {
       v-if="result.current.emi > 0 && result.newLoan.emi > 0"
       class="grid grid-cols-1 md:grid-cols-2 gap-6"
     >
-      <!-- Current Bank Schedule -->
-      <div class="card bg-base-200 shadow-xl">
-        <div class="card-body">
-          <div class="flex items-center justify-between">
-            <h3 class="card-title text-error text-lg">Current Bank Schedule</h3>
-            <button
-              class="btn btn-sm btn-outline btn-error"
-              @click="showCurrentSchedule = !showCurrentSchedule"
-            >
-              {{ showCurrentSchedule ? 'Hide' : 'Show' }} Schedule
-            </button>
-          </div>
-          <div
-            v-if="showCurrentSchedule"
-            class="overflow-x-auto mt-4 max-h-96 overflow-y-auto"
-          >
-            <table class="table table-xs table-zebra table-pin-rows">
-              <thead>
-                <tr>
-                  <th>Month</th>
-                  <th class="text-right">EMI</th>
-                  <th class="text-right">Principal</th>
-                  <th class="text-right">Interest</th>
-                  <th class="text-right">Balance</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="row in result.current.monthlyBreakdown" :key="row.month">
-                  <td>{{ row.month }}</td>
-                  <td class="text-right">{{ formatCurrency(row.emi) }}</td>
-                  <td class="text-right">{{ formatCurrency(row.principal) }}</td>
-                  <td class="text-right">{{ formatCurrency(row.interest) }}</td>
-                  <td class="text-right">{{ formatCurrency(row.balance) }}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <!-- New Bank Schedule -->
-      <div class="card bg-base-200 shadow-xl">
-        <div class="card-body">
-          <div class="flex items-center justify-between">
-            <h3 class="card-title text-success text-lg">New Bank Schedule</h3>
-            <button
-              class="btn btn-sm btn-outline btn-success"
-              @click="showNewSchedule = !showNewSchedule"
-            >
-              {{ showNewSchedule ? 'Hide' : 'Show' }} Schedule
-            </button>
-          </div>
-          <div
-            v-if="showNewSchedule"
-            class="overflow-x-auto mt-4 max-h-96 overflow-y-auto"
-          >
-            <table class="table table-xs table-zebra table-pin-rows">
-              <thead>
-                <tr>
-                  <th>Month</th>
-                  <th class="text-right">EMI</th>
-                  <th class="text-right">Principal</th>
-                  <th class="text-right">Interest</th>
-                  <th class="text-right">Balance</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="row in result.newLoan.monthlyBreakdown" :key="row.month">
-                  <td>{{ row.month }}</td>
-                  <td class="text-right">{{ formatCurrency(row.emi) }}</td>
-                  <td class="text-right">{{ formatCurrency(row.principal) }}</td>
-                  <td class="text-right">{{ formatCurrency(row.interest) }}</td>
-                  <td class="text-right">{{ formatCurrency(row.balance) }}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+      <AmortizationTable
+        :breakdown="result.current.monthlyBreakdown"
+        color="error"
+        title="Current Bank Schedule"
+      />
+      <AmortizationTable
+        :breakdown="result.newLoan.monthlyBreakdown"
+        color="success"
+        title="New Bank Schedule"
+      />
     </div>
   </div>
 </template>
