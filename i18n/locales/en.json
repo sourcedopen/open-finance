@@ -91,7 +91,8 @@
         "totalLoanPayment": "Total Loan Payment",
         "netTotalCost": "Net Total Cost",
         "currentSchedule": "Current Bank Schedule",
-        "newSchedule": "New Bank Schedule"
+        "newSchedule": "New Bank Schedule",
+        "combinedSchedule": "Amortization Schedule Comparison"
     },
     "emiCalc": {
         "pageTitle": "EMI Calculator",

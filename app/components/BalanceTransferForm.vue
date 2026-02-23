@@ -236,10 +236,14 @@ function printPage() {
       </div>
     </div>
 
-    <!-- Amortization Schedules -->
-    <div v-if="result.current.emi > 0 && result.newLoan.emi > 0" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <AmortizationTable :breakdown="result.current.monthlyBreakdown" color="error" :title="$t('balanceTransfer.currentSchedule')" />
-      <AmortizationTable :breakdown="result.newLoan.monthlyBreakdown" color="success" :title="$t('balanceTransfer.newSchedule')" />
+    <!-- Combined Amortization Schedule -->
+    <div v-if="result.current.emi > 0 && result.newLoan.emi > 0">
+      <BalanceTransferAmortization
+        :current-breakdown="result.current.monthlyBreakdown"
+        :new-breakdown="result.newLoan.monthlyBreakdown"
+        :current-title="$t('balanceTransfer.currentBank')"
+        :new-title="$t('balanceTransfer.newBank')"
+      />
     </div>
   </div>
 </template>

@@ -91,7 +91,8 @@
         "totalLoanPayment": "एकूण कर्ज भरणा",
         "netTotalCost": "निव्वळ एकूण खर्च",
         "currentSchedule": "सध्याच्या बँकेचे शेड्यूल",
-        "newSchedule": "नवीन बँकेचे शेड्यूल"
+        "newSchedule": "नवीन बँकेचे शेड्यूल",
+        "combinedSchedule": "अमोर्टायझेशन शेड्यूल तुलना"
     },
     "emiCalc": {
         "pageTitle": "EMI कॅल्क्युलेटर",
