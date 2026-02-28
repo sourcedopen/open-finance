@@ -49,10 +49,8 @@ function switchLocale(code: string) {
             </svg>
           </button>
 
-          <NuxtLink to="/" class="btn btn-ghost text-lg lg:text-xl font-extrabold tracking-tight px-2 lg:px-3">
-            <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              {{ $t('app.name') }}
-            </span>
+          <NuxtLink to="/" class="btn btn-ghost hover:bg-transparent px-2 lg:px-3 h-auto py-1">
+            <AppLogo />
           </NuxtLink>
         </div>
 
@@ -126,10 +124,8 @@ function switchLocale(code: string) {
           class="fixed top-0 left-0 z-[70] h-full w-72 bg-base-200 shadow-2xl shadow-black/40 flex flex-col lg:hidden"
         >
           <!-- Drawer header -->
-          <div class="flex items-center justify-between p-5 border-b border-base-content/10">
-            <span class="text-lg font-extrabold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              {{ $t('app.name') }}
-            </span>
+          <div class="flex items-center justify-between p-4 lg:p-5 border-b border-base-content/10">
+            <AppLogo />
             <button class="btn btn-ghost btn-sm btn-square" @click="closeMobileDrawer">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
